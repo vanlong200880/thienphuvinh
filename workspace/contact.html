@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title></title>
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="36x36"  href="images/android-icon-36x36.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+   	<link rel="stylesheet" href="css/custom-scroll-menu.css">
+	<link rel="stylesheet" href="css/font-icon.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/masterpage.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.mCustomScrollbar.js" type="text/javascript"></script>
+	<script src="js/custom-tpv.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+	        $("#owl-product-carousel-first").owlCarousel({
+	            items : 1,
+	            itemsDesktop: [1400, 1],
+	            itemsDesktopSmall: [1100, 1],
+	            itemsTablet: [767, 1],
+	            itemsMobile: [500, 1],
+	            autoPlay: 4000,
+	            navigation : false,
+	            slideSpeed : 300,
+	            paginationSpeed : 400,
+	            pagination : true,
+	            paginationNumbers: true,
+	                //singleItem : true,
+	            navigationText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+	            rewindNav : true,
+	            stopOnHover : true
+	        });
+
+	        $("#owl-product-carousel-second").owlCarousel({
+	            items : 4,
+	            itemsDesktop: [1400, 4],
+	            itemsDesktopSmall: [1100, 4],
+	            itemsTablet: [767, 4],
+	            itemsMobile: [500, 1],
+	            autoPlay: 4000,
+	            navigation : true,
+	            slideSpeed : 300,
+	            paginationSpeed : 400,
+	            pagination : false,
+	            paginationNumbers: false,
+	                //singleItem : true,
+	            navigationText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+	            rewindNav : true,
+	            stopOnHover : true
+	        });
+
+        });
+        
+        </script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="topbar">
+				<div class="container">
+					<div class="wrap-address">
+						<ul>
+							<li>
+								<span class="fa fa-map-marker"></span>
+								<span class="address">25/5 D2 Nguyễn Thị Thử, Ấp 3, Xã Xuân Thới Sơn, Huyện Hóc Môn, Tp. Hồ Chí Minh</span>
+							</li>
+						</ul>
+					</div>
+					<div class="wrap-number-social">
+						<div class="hotline">
+							<span class="fa fa-phone"></span>
+							<span class="number">0919.451.350 - 0938.241.479</span>
+						</div>
+						<div class="social">
+							<span class="name">Chia sẻ mạng xã hội:</span>
+							<a href="">
+								<span class="fa fa-facebook-square"></span>
+							</a>
+							<a href="">
+								<span class="fa fa-twitter-square"></span>
+							</a>
+							<a href="">
+								<span class="fa fa-youtube-square"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div><!--end topbar-->
+			<div class="wrap-logo-search clearfix">
+					<div class="container">		
+						<div class="logo">
+							<a href="#">
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="form-search">
+							<form>
+								<input class="search" type="text" placeholder="Tìm theo danh mục"/>
+								<button type="submit" class="btn btn-default">
+									<i class="fa fa-search"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div><!--end wrap-logo-search-->
+
+				<div class="nav-top-menu sp">
+					<div class="container">
+						<ul class="tabs-menu">
+							
+							<li class="current">
+								<a class="btn-second" href="#tab-1">Menu <span class="fa fa-bars"></span></a>
+							</li>
+							<li>
+								<a class="btn-first" href="#tab-2">Danh mục <span class="icon-fa icon-icon-listcat"></span></a>
+							</li>
+						</ul>
+					
+						<div class="tab">
+							<ul id="tab-1" class="list-cat tab-content">
+								<li><a href="#"><span class="fa fa-angle-right left-icon"></span>Trang chủ</a></li>
+								<li><a href="#"><span class="fa fa-angle-right left-icon"></span>Giới thiệu</a></li>
+								<li><a href="#"><span class="fa fa-angle-right left-icon"></span>Sản phẩm</a></li>
+								<li><a href="#"><span class="fa fa-angle-right left-icon"></span>Dịch vụ</a></li>
+								<li><a href="#"><span class="fa fa-angle-right left-icon"></span>Tin tức</a></li>
+								<li><a href="#"><span class="fa fa-angle-right left-icon"></span>Liên hệ</a></li>
+							</ul>
+							<ul id="tab-2" class="list-cat tab-content">
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy may công nghiệp<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy vắt sổ<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy viền bằng<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy chuyên dụng điện tử<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy viền ống<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy viền ống bo tay<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy đính bọ<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy đính nút<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy khuy bằng<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy khuy đầu tròn<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy lập trình<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy may bao<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy cuốn đáy<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy cuốn sườn<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy lưng<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy móc xích<span class="fa fa-angle-right right-icon"></span></a></li>
+
+								<li><a href="#"><span class="icon-fa icon-icon-sewing left-icon"></span>Máy nhiều kim<span class="fa fa-angle-right right-icon"></span></a></li>
+							</ul>
+							
+						</div>
+					</div>
+				</div><!--end nav-top-menu sp-->
+				<div class="nav-top-menu pc">
+					<div class="container">
+						<div class="wrap-top-menu">
+							<div class="main-cat">
+								<h3 class="widget-title">
+									<span class="name-cat">Danh mục</span>
+									<span class="icon-fa icon-icon-listcat"></span>
+								</h3>
+							</div>
+							<div class="menu-pc">
+								<ul>
+									<li class="active"><a href="#">Trang chủ</a></li>
+									<li><a href="#">Giới thiệu</a></li>
+									<li><a href="#">Sản phẩm</a></li>
+									<li><a href="#">Dịch vụ</a></li>
+									<li><a href="#">Tin tức</a></li>
+									<li><a href="#">Liên hệ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div><!--end nav-top-menu pc-->
+		</header>
+		<div class="body-content">
+
+
+			<section class="all-cat clearfix">
+				<div class="container">
+					<div class="title-all-page">
+						<h2>
+							<span class="icon"><i class="icon-fa icon-icon-sewing"></i></span>
+							Dịch vụ
+						</h2>
+					</div>
+					<div class="show-cat page-child clearfix">
+						<div class="left-show-cat">
+							<div class="title-cat">
+								<span class="icon">
+									<i class="icon-fa icon-icon-sewing"></i>
+								</span>
+								<span class="name">
+									Liên hệ<br>Chúng tôi
+								</span>
+
+								
+							</div><!--end title-cat-->
+							<div class="list-brand hidden">
+								<img src="images/contact.png">
+							</div><!--end list-brand-->
+						</div><!--end left-show-cat-->
+
+						<div class="right-show-cat clearfix">
+							<div class="load-page wrap-contact ">
+								<div class="wrap-left-right">
+									<div class="left">
+										<div class="title">
+											<h5>CTY TNHH TMDV THIÊN PHÚ VINH</h5>
+										</div>
+										<ul class="info">
+											<li>
+												<span class="fa fa-map-marker"></span>
+												<span class="name">Địa chỉ: 25/5 D2 Nguyễn Thị Thử, Ấp 3, Xã Xuân Thới Sơn, Huyện Hóc Môn, Tp.HCM</span>
+											</li>
+											<li>
+												<span class="fa fa-phone"></span>
+												<span class="name">Điện thoại: <a href="tel:0919.451.350">0919.451.350</a> - <a href="tel:0938.241.479">0938.241.479</a></span>
+											</li>
+											<li>
+												<span class="fa fa-fax"></span>
+												<span class="name">08.3595 1755</span>
+											</li>
+											<li>
+												<span class="fa fa-envelope"></span>
+												<span class="name">Email: <a href="mailto:hotro@thienphuvinh.com">hotro@thienphuvinh.com</a></span>
+											</li>
+										</ul>
+			
+										<div class="title">
+											<h5>Giờ làm việc</h5>
+										</div>
+										<ul class="info">
+											<li>
+												<span class="fa fa-calendar"></span>
+												<span class="name">Từ thứ 2 đến thứ 6: 8 A.M. -  6 P.M.</span>
+											</li>
+											<li>
+												<span class="fa fa-calendar"></span>
+												<span class="name">Thứ 7:  9 A.M. -  1 P.M.</span>
+											</li>
+											<li>
+												<span class="fa fa-calendar"></span>
+												<span class="name">Chủ nhật nghỉ</span>
+											</li>
+											
+										</ul>
+									</div><!--end left-->
+									<div class="right">
+										<input type="text" placeholder="HỌ & TÊN *">
+										<input type="email" placeholder="EMAIL *">
+										<input type="text" placeholder="CHỦ ĐỀ">
+										<textarea name="" rows="10"></textarea>
+										<input type="submit" value="GỬI ĐI">
+									</div><!--end right-->
+								</div><!--end left-right-->
+								<div class="map">
+									<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=215993365504575741311.0004dd3568f76b36a7985&amp;ie=UTF8&amp;t=m&amp;ll=10.876254,106.576266&amp;spn=0.004278,0.004989&amp;z=17&amp;output=embed"></iframe>
+								</div>
+							</div><!--end load-page-->
+							
+						</div><!--end right-show-cat-->
+					</div><!--end show-cat-->
+					
+				</div>
+			</section>
+
+
+		</div><!--end body-content-->
+		<footer class="clearfix">
+			<div class="container">
+				<div class="f-social">
+					<a href="">
+						<span class="fa fa-facebook-square"></span>
+					</a>
+					<a href="">
+						<span class="fa fa-twitter-square"></span>
+					</a>
+					<a href="">
+						<span class="fa fa-youtube-square"></span>
+					</a>
+				</div>
+				<div class="f-left">
+					© 2016 Designed by huynh trong dai.<br> 
+					All right reserved
+				</div>
+				<div class="f-right">
+					<ul>
+						<li><a href="#">Trang chủ</a></li>
+						<li><a href="#">Giới thiệu</a></li>
+						<li><a href="#">Sản phẩm</a></li>
+						<li><a href="#">Dịch vụ</a></li>
+						<li><a href="#">Liên hệ</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div><!--end wrapper-->
+</body>
+</html>
