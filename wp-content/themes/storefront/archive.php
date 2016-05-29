@@ -10,29 +10,55 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="body-content">
+			<section class="all-cat clearfix">
+        <div class="container">
+          <div class="title-all-page">
+						<h2>
+							<span class="icon"><i class="icon-fa icon-icon-sewing"></i></span>
+							Tin tức
+						</h2>
+					</div>
+          <div class="show-cat page-child clearfix">
+            <div class="left-show-cat">
+							<div class="title-cat">
+								<span class="icon">
+									<i class="icon-fa icon-icon-sewing"></i>
+								</span>
+								<span class="name">
+									Tin tức<br>công ty
+								</span>
 
-		<?php if ( have_posts() ) : ?>
+								
+							</div><!--end title-cat-->
+							<div class="list-brand hidden">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/news.png">
+							</div><!--end list-brand-->
+						</div><!--end left-show-cat-->
+            
+            <div class="right-show-cat">
+							<div class="load-page news">
+                <?php if ( have_posts() ) : ?>
+                  <ul class="wrap-news">
+                <?php get_template_part( 'loop-news' ); ?>
+                  </ul>
+             <?php  else :
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+                get_template_part( 'content', 'none' );
 
-			<?php get_template_part( 'loop' );
+              endif; ?>
+								
+									
+									
+								
+							</div><!--end load-page-->
+							
+						</div><!--end right-show-cat-->
+          </div>
+        </div>
+      </section>
+</div>
 
-		else :
-
-			get_template_part( 'content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
 
 <?php
-do_action( 'storefront_sidebar' );
 get_footer();
