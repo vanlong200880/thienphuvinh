@@ -19,7 +19,6 @@ get_header();
 							<?php the_title(); ?>
 						</h2>
 					</div>
-          <section class="all-cat clearfix">
               <div class="show-cat page-child clearfix">
                 <?php get_template_part('templates/menu-about'); ?>
                 <div class="right-show-cat custom-slide">
@@ -92,9 +91,7 @@ get_header();
               });
 
               </script>
-            
-            
-          </section>
+
         </div>
   </section>
   

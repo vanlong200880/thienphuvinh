@@ -3,6 +3,7 @@ $product_cat  = isset($product_cat) ? $product_cat : 0;
 $attribute_id      = isset($attribute_id) ? $attribute_id : 0;
 $category_link      = isset($category_link) ? $category_link : '';
 $categories_name      = isset($categories_name) ? $categories_name : '';
+$cat_color = isset($cat_color) ? $cat_color : '';
 $args = array (					 
   'post_status'    => 'publish',		
   'order'          => 'DESC',
@@ -13,10 +14,10 @@ $args = array (
 );
 $the_query = new WP_Query( $args );
 ?>
-<div class="show-cat <?php echo $attribute_id; ?> clearfix" id="<?php echo $attribute_id; ?>">
+<div style="border-top: 5px solid <?php echo $cat_color; ?>" class="show-cat <?php echo $attribute_id; ?> clearfix" id="<?php echo $attribute_id; ?>">
   <div class="left-show-cat">
-    <div class="title-cat">
-      <span class="icon">
+    <div class="title-cat" style="border-bottom: 3px solid <?php echo $cat_color; ?>;">
+      <span class="icon" style="background-color: <?php echo $cat_color; ?>">
         <i class="icon-fa icon-icon-sewing"></i>
       </span>
       <span class="name">

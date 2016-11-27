@@ -65,8 +65,8 @@
 							</a>
 						</div>
 						<div class="form-search">
-							<form>
-								<input class="search" type="text" placeholder="Tìm theo danh mục"/>
+							<form action="<?php echo home_url() ?>/tim-kiem" type="GET">
+								<input class="search" name="keyword" type="text" value="<?php echo ($_GET['keyword'])? $_GET['keyword'] : ''; ?>" placeholder="Tìm theo danh mục"/>
 								<button type="submit" class="btn btn-default">
 									<i class="fa fa-search"></i>
 								</button>

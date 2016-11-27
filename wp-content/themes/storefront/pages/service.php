@@ -19,7 +19,6 @@ get_header();
 							<?php the_title(); ?>
 						</h2>
 					</div>
-          <section class="all-cat clearfix">
               <div class="show-cat page-child clearfix">
                 <div class="left-show-cat">
 							<div class="title-cat">
@@ -43,7 +42,6 @@ get_header();
             
             
             
-          </section>
         </div>
   </section>
   

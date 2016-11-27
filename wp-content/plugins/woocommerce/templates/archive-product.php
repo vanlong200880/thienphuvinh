@@ -46,11 +46,16 @@ get_header( 'shop' ); ?>
           <a href="<?php echo home_url(); ?>/san-pham/">Sản phẩm</a><span class="line fa fa-angle-right"></span><span class="active"><?php woocommerce_page_title(); ?></span>
         </h2>
       </div>
-      
-      <div class="show-cat catID-01 clearfix" id="catID-01">
+      <?php
+
+      $category = get_queried_object();
+      $cat_color = get_field('cat_color', 'product_cat_'.$category->term_id);
+      ?>
+
+      <div class="show-cat catID-01 clearfix" id="catID-01" style="border-top: 5px solid <?php echo $cat_color; ?>;">
         <div class="left-show-cat">
-							<div class="title-cat">
-								<span class="icon">
+							<div class="title-cat" style="border-bottom: 3px solid <?php echo $cat_color; ?>;">
+								<span class="icon" style="background-color: <?php echo $cat_color; ?>;">
 									<i class="icon-fa icon-icon-sewing"></i>
 								</span>
 								<span class="name">

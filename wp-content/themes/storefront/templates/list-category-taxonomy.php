@@ -16,10 +16,13 @@ $args = array(
        'title_li'     => $title,
        'hide_empty'   => $empty
 );
-$all_categories = get_categories( $args ); ?>
+$all_categories = get_categories( $args );
+//var_dump($all_categories);
+?>
 
   <?php foreach ($all_categories as $cat) { ?>
   <?php $variable = get_field('home', 'product_cat_'.$cat->term_id);
+    $cat_color = get_field('cat_color', 'product_cat_'.$cat->term_id);
   ?>
-      <?php getTemplatePart('templates/tab',  null, array('product_cat' => $cat->slug ,'categories_name' => $cat->name,  'attribute_id' => $cat->description, 'category_link' => get_term_link($cat->slug, 'product_cat'))); ?>
+      <?php getTemplatePart('templates/tab',  null, array('product_cat' => $cat->slug ,'categories_name' => $cat->name,  'attribute_id' => $cat->description, 'cat_color' => $cat_color, 'category_link' => get_term_link($cat->slug, 'product_cat'))); ?>
         <?php	} ?>
